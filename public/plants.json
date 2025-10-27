@@ -1,0 +1,74 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light. Perfect for beginners and busy plant parents.",
+    "image": "https://i.pinimg.com/1200x/36/9a/d5/369ad5cade297f440bec64535fb4edb1.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Monstera Deliciosa",
+    "category": "Tropical",
+    "price": 35,
+    "rating": 4.9,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "A stunning tropical plant with distinctive split leaves. Adds a jungle vibe to any space.",
+    "image": "https://i.pinimg.com/1200x/ff/f3/ef/fff3efe79be2eb9352736aa87e560c23.jpg",
+    "providerName": "Tropical Paradise"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Statement Plant",
+    "price": 45,
+    "rating": 4.7,
+    "availableStock": 5,
+    "careLevel": "Medium",
+    "description": "A popular statement plant with large, glossy leaves. Perfect for creating a focal point in your home.",
+    "image": "https://i.pinimg.com/736x/c9/f7/30/c9f730b85f3efe73ebece0549eeb0fea.jpg",
+    "providerName": "Green Thumb Co"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Pothos Golden",
+    "category": "Trailing",
+    "price": 12,
+    "rating": 4.6,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "A versatile trailing plant with heart-shaped leaves. Great for hanging baskets or training up a trellis.",
+    "image": "https://i.pinimg.com/1200x/69/82/27/698227c4bddc98bf82260eab22548d93.jpg",
+    "providerName": "Vine & Bloom"
+  },
+  {
+    "plantId": 5,
+    "plantName": "ZZ Plant",
+    "category": "Low Maintenance",
+    "price": 22,
+    "rating": 4.5,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "An extremely low-maintenance plant with glossy, dark green leaves. Perfect for forgetful plant parents.",
+    "image": "https://i.pinimg.com/1200x/fc/db/07/fcdb07ca54efafef04a1b46d2a1ebf82.jpg",
+    "providerName": "Easy Green"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Rubber Plant",
+    "category": "Air Purifier",
+    "price": 28,
+    "rating": 4.4,
+    "availableStock": 7,
+    "careLevel": "Easy",
+    "description": "A classic houseplant with large, dark green leaves. Excellent for air purification and easy care.",
+    "image": "https://i.pinimg.com/1200x/61/d1/dd/61d1dd47ccfb2186d21ac57a82ce008f.jpg",
+    "providerName": "Classic Greens"
+  }
+]
