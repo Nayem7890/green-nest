@@ -19,7 +19,7 @@ const PlantDetails = () => {
     email: ''
   });
 
-  // ✅ Protect Route: Redirect to login if not logged in
+  
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -30,7 +30,7 @@ const PlantDetails = () => {
     return () => unsubscribe();
   }, [navigate, id]);
 
-  // ✅ Load Plant Details by ID
+  
   useEffect(() => {
     const foundPlant = plantsData.find(
       (p) => p.plantId === parseInt(id)
@@ -43,7 +43,7 @@ const PlantDetails = () => {
     setLoading(false);
   }, [id, navigate]);
 
-  // ✅ Handle Consultation Form Submit
+  
   const handleConsultationSubmit = (e) => {
     e.preventDefault();
     if (!consultationForm.name || !consultationForm.email) {
@@ -61,7 +61,7 @@ const PlantDetails = () => {
     });
   };
 
-  // ✅ Loading Spinner
+  
   if (loading) {
     return (
       <div className="flex justify-center items-center min-h-screen">
@@ -70,7 +70,7 @@ const PlantDetails = () => {
     );
   }
 
-  // ✅ Plant Not Found
+  
   if (!plant) {
     return (
       <div className="flex justify-center items-center min-h-screen">
@@ -87,12 +87,12 @@ const PlantDetails = () => {
     );
   }
 
-  // ✅ Main Page
+  
   return (
     <div className="min-h-screen bg-base-100 py-10">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
         
-        {/* 🖼 Plant Image */}
+       
         <div>
           <img
             src={plant.image}
@@ -106,7 +106,7 @@ const PlantDetails = () => {
           </div>
         </div>
 
-        {/* 📋 Plant Info */}
+     
         <div className="space-y-6">
           <h1 className="text-4xl font-bold text-green-600">{plant.plantName}</h1>
           <p className="text-2xl font-semibold text-gray-800">${plant.price}</p>
@@ -124,7 +124,7 @@ const PlantDetails = () => {
             </div>
           </div>
 
-          {/* 📞 Book Consultation */}
+   
           <div className="card bg-base-100 shadow-lg">
             <div className="card-body">
               <h3 className="card-title text-green-600">Book Expert Consultation</h3>

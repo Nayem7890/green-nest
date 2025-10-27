@@ -84,7 +84,7 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      
       <section className="hero min-h-screen">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
@@ -119,7 +119,7 @@ const Hero = () => {
         </Swiper>
       </section>
 
-      {/* Top Rated Plants Section */}
+     
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -155,7 +155,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Plant Care Tips Section */}
+      
       <section className="py-20 bg-green-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -177,7 +177,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Meet Our Green Experts Section */}
+   
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -204,7 +204,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Plant of the Week Section */}
+     
       <section className="py-20 bg-green-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center">

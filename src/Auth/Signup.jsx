@@ -16,7 +16,7 @@ const Signup = () => {
   const [passwordError, setPasswordError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // ✅ Password validation
+ 
   const validatePassword = (password) => {
     if (password.length < 6) return "Password must be at least 6 characters long";
     if (!/[A-Z]/.test(password)) return "Password must contain at least one uppercase letter";
@@ -46,14 +46,14 @@ const Signup = () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
 
-      // Update displayName and photoURL
+      
       await updateProfile(userCredential.user, {
         displayName: formData.name,
         photoURL: formData.photoURL || null
       });
 
       toast.success("Signup successful!");
-      navigate('/'); // Redirect to Home page
+      navigate('/'); 
     } catch (error) {
       toast.error(error.message);
     } finally {
@@ -61,14 +61,14 @@ const Signup = () => {
     }
   };
 
-  // ✅ Google sign-in
+  
   const handleGoogleSignIn = async () => {
     setLoading(true);
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
       toast.success("Signup successful!");
-      navigate('/'); // Redirect to Home page
+      navigate('/'); 
     } catch (error) {
       toast.error(error.message);
     } finally {

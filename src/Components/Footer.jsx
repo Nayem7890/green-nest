@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
           
-          {/* Quick Links */}
+         
           <div className="text-center md:text-left">
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -24,7 +24,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Icons */}
+         
           <div className="text-center">
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-center gap-6 text-2xl">
@@ -56,10 +56,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
+        
         <div className="border-t border-green-400 my-8"></div>
 
-        {/* Copyright */}
+        
         <div className="text-center text-sm">
           © 2025 <span className="font-semibold">GreenNest</span>. All rights reserved.
         </div>

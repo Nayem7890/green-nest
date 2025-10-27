@@ -18,11 +18,11 @@ const Plants = () => {
     setLoading(false);
   }, []);
 
-  // Get unique categories and care levels
+
   const categories = ['All', ...new Set(plants.map(plant => plant.category))];
   const careLevels = ['All', ...new Set(plants.map(plant => plant.careLevel))];
 
-  // Filter and search logic
+  
   useEffect(() => {
     let filtered = plants.filter(plant => {
       const matchesSearch = plant.plantName.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -33,7 +33,7 @@ const Plants = () => {
       return matchesSearch && matchesCategory && matchesCareLevel;
     });
 
-    // Sort plants
+   
     filtered.sort((a, b) => {
       switch (sortBy) {
         case 'price-low':
@@ -90,7 +90,7 @@ const Plants = () => {
   return (
     <div className="min-h-screen bg-base-100 py-8">
       <div className="container mx-auto px-4">
-        {/* Header */}
+       
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-green-600 mb-4">🌱 Our Plant Collection</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -98,10 +98,10 @@ const Plants = () => {
           </p>
         </div>
 
-        {/* Filters and Search */}
+     
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-            {/* Search */}
+          
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-semibold">Search Plants</span>
@@ -115,7 +115,7 @@ const Plants = () => {
               />
             </div>
 
-            {/* Category Filter */}
+       
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-semibold">Category</span>
@@ -131,7 +131,7 @@ const Plants = () => {
               </select>
             </div>
 
-            {/* Care Level Filter */}
+          
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-semibold">Care Level</span>
@@ -147,7 +147,7 @@ const Plants = () => {
               </select>
             </div>
 
-            {/* Sort */}
+          
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-semibold">Sort By</span>
@@ -165,13 +165,13 @@ const Plants = () => {
             </div>
           </div>
 
-          {/* Results Count */}
+       
           <div className="text-sm text-gray-600">
             Showing {filteredPlants.length} of {plants.length} plants
           </div>
         </div>
 
-        {/* Plants Grid */}
+    
         {filteredPlants.length === 0 ? (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🔍</div>
@@ -202,7 +202,7 @@ const Plants = () => {
                 </figure>
                 
                 <div className="card-body">
-                  {/* Plant Name and Price */}
+                 
                   <div className="flex justify-between items-start mb-2">
                     <h2 className="card-title text-lg">{plant.plantName}</h2>
                     <div className="text-right">
@@ -210,13 +210,13 @@ const Plants = () => {
                     </div>
                   </div>
 
-                  {/* Provider */}
+                
                   <p className="text-sm text-gray-500 mb-3">by {plant.providerName}</p>
 
-                  {/* Description */}
+              
                   <p className="text-sm text-gray-600 mb-4 line-clamp-2">{plant.description}</p>
 
-                  {/* Badges */}
+                
                   <div className="flex flex-wrap gap-2 mb-4">
                     <div className={`badge ${getCategoryColor(plant.category)}`}>
                       {plant.category}
@@ -226,7 +226,7 @@ const Plants = () => {
                     </div>
                   </div>
 
-                  {/* Rating */}
+               
                   <div className="flex items-center gap-2 mb-3">
                     <div className="flex">
                       {renderStars(plant.rating)}
@@ -234,7 +234,7 @@ const Plants = () => {
                     <span className="text-sm font-semibold">{plant.rating}</span>
                   </div>
 
-                  {/* Stock Status */}
+                 
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-sm text-gray-600">Stock:</span>
                     <span className={`text-sm font-semibold ${
@@ -245,7 +245,7 @@ const Plants = () => {
                     </span>
                   </div>
 
-                  {/* Action Button */}
+              
                   <div className="card-actions justify-end">
                     <Link
                       to={`/plants/${plant.plantId}`}
@@ -261,7 +261,7 @@ const Plants = () => {
           </div>
         )}
 
-        {/* Call to Action */}
+      
         <div className="text-center mt-12 bg-green-50 rounded-lg p-8">
           <h3 className="text-2xl font-bold text-green-600 mb-4">Need Help Choosing?</h3>
           <p className="text-gray-600 mb-6">

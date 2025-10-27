@@ -49,7 +49,7 @@ const MyProfile = () => {
         photoURL: formData.photoURL || null
       });
       
-      // Update local user state
+      
       setUser({
         ...user,
         displayName: formData.displayName,
@@ -95,7 +95,7 @@ const MyProfile = () => {
           <div className="card-body">
             <h1 className="card-title text-3xl font-bold text-green-600 mb-6">My Profile</h1>
             
-            {/* Current Profile Info */}
+          
             <div className="bg-green-50 p-6 rounded-lg mb-6">
               <h2 className="text-xl font-semibold text-green-800 mb-4">Current Profile</h2>
               <div className="flex items-center space-x-4 mb-4">
@@ -116,7 +116,7 @@ const MyProfile = () => {
               </div>
             </div>
 
-            {/* Update Profile Form */}
+            
             <form onSubmit={handleUpdateProfile} className="space-y-6">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Update Profile</h2>
               
@@ -179,7 +179,7 @@ const MyProfile = () => {
               </div>
             </form>
 
-            {/* Account Information */}
+            
             <div className="divider"></div>
             
             <div className="bg-gray-50 p-4 rounded-lg">
