@@ -110,7 +110,7 @@ const Signup = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Photo URL (Optional)</label>
+            <label className="block text-sm font-medium text-gray-700">Photo URL</label>
             <input
               type="url"
               name="photoURL"
