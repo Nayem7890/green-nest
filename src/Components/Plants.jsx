@@ -190,9 +190,9 @@ const Plants = () => {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredPlants.map(plant => (
-              <div key={plant.plantId} className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <div key={plant.plantId} className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
                 <figure className="px-4 pt-4">
                   <img
                     src={plant.image}
@@ -201,20 +201,20 @@ const Plants = () => {
                   />
                 </figure>
                 
-                <div className="card-body">
+                <div className="card-body flex flex-col">
                  
                   <div className="flex justify-between items-start mb-2">
-                    <h2 className="card-title text-lg">{plant.plantName}</h2>
+                    <h2 className="card-title text-lg text-base-content">{plant.plantName}</h2>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-green-600">${plant.price}</div>
                     </div>
                   </div>
 
                 
-                  <p className="text-sm text-gray-500 mb-3">by {plant.providerName}</p>
+                  <p className="text-sm text-base-content/60 mb-3">by {plant.providerName}</p>
 
               
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-2">{plant.description}</p>
+                  <p className="text-sm text-base-content/70 mb-4 line-clamp-2">{plant.description}</p>
 
                 
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -236,7 +236,7 @@ const Plants = () => {
 
                  
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-sm text-gray-600">Stock:</span>
+                    <span className="text-sm text-base-content/70">Stock:</span>
                     <span className={`text-sm font-semibold ${
                       plant.availableStock > 5 ? 'text-green-600' : 
                       plant.availableStock > 0 ? 'text-yellow-600' : 'text-red-600'
@@ -246,13 +246,13 @@ const Plants = () => {
                   </div>
 
               
-                  <div className="card-actions justify-end">
+                  <div className="card-actions justify-end mt-auto">
                     <Link
                       to={`/plants/${plant.plantId}`}
                       className="btn btn-primary bg-green-600 hover:bg-green-700 text-white w-full"
                       
                     >
-                      View Details
+                      See More
                     </Link>
                   </div>
                 </div>

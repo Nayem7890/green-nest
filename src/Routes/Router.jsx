@@ -1,12 +1,14 @@
-import { createBrowserRouter, Router } from "react-router";
+import { createBrowserRouter } from "react-router";
 import HomeLayout from "../Layouts/HomeLayout";
 import PlantDetails from "../Components/PlantDetails";
-import ProtectedRoute from "../Components/ProtectedRoute";
 import Hero from "../Components/Hero";
 import Plants from "../Components/Plants";
 import Login from "../Auth/Login";
 import Signup from "../Auth/Signup";
 import MyProfile from "../Components/MyProfile";
+import About from "../Components/About";
+import Contact from "../Components/Contact";
+import Support from "../Components/Support";
 
 const router = createBrowserRouter([
   {
@@ -19,18 +21,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/plants",
-        element: <ProtectedRoute>
-          <Plants></Plants>
-        </ProtectedRoute>
-        ,
+        element: <Plants></Plants>,
       },
       {
         path: "plants/:id",
-        element: (
-          <ProtectedRoute>
-            <PlantDetails />
-          </ProtectedRoute>
-        ),
+        element: <PlantDetails />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "support",
+        element: <Support />,
       },
       {
         path: "profile",
