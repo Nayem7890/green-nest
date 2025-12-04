@@ -38,7 +38,7 @@ const Support = () => {
                 key={faq.question}
                 className="p-5 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800"
               >
-                <h3 className="text-lg font-semibold text-green-700 dark:text-green-300">
+                <h3 className="text-lg font-semibold text-green-700 dark:text-green-800">
                   {faq.question}
                 </h3>
                 <p className="text-base-content/70 mt-2">{faq.answer}</p>

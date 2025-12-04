@@ -32,7 +32,7 @@ const About = () => {
         {/* FEATURES SECTION */}
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <div className="p-6 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800">
-            <h3 className="text-xl font-semibold text-green-700 dark:text-green-300 mb-2">
+            <h3 className="text-xl font-semibold text-green-700 dark:text-green-800 mb-2">
               Curated Plants
             </h3>
             <p className="text-base-content/70 leading-relaxed">
@@ -42,7 +42,7 @@ const About = () => {
           </div>
 
           <div className="p-6 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800">
-            <h3 className="text-xl font-semibold text-green-700 dark:text-green-300 mb-2">
+            <h3 className="text-xl font-semibold text-green-700 dark:text-green-800 mb-2">
               Expert Guidance
             </h3>
             <p className="text-base-content/70 leading-relaxed">
@@ -52,7 +52,7 @@ const About = () => {
           </div>
 
           <div className="p-6 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800">
-            <h3 className="text-xl font-semibold text-green-700 dark:text-green-300 mb-2">
+            <h3 className="text-xl font-semibold text-green-700 dark:text-green-800 mb-2">
               Community Support
             </h3>
             <p className="text-base-content/70 leading-relaxed">

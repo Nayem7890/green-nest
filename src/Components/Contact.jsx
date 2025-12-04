@@ -16,15 +16,15 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div className="p-6 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800">
-              <h3 className="text-xl font-semibold text-green-700 dark:text-green-300">Email</h3>
+              <h3 className="text-xl font-semibold text-green-700 dark:text-green-800">Email</h3>
               <p className="text-base-content/70">support@greennest.com</p>
             </div>
             <div className="p-6 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800">
-              <h3 className="text-xl font-semibold text-green-700 dark:text-green-300">Phone</h3>
+              <h3 className="text-xl font-semibold text-green-700 dark:text-green-800">Phone</h3>
               <p className="text-base-content/70">+1 (555) 123-4567</p>
             </div>
             <div className="p-6 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800">
-              <h3 className="text-xl font-semibold text-green-700 dark:text-green-300">Office</h3>
+              <h3 className="text-xl font-semibold text-green-700 dark:text-green-800">Office</h3>
               <p className="text-base-content/70">123 Green Street, Plant City, Earth</p>
             </div>
           </div>
